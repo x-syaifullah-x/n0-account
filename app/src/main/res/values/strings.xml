@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">N0ACCOUNT</string>
+
+    <!-- Error messages -->
+
+<!--    <string name="applovin_ad_unit_id_type_banner">b824971fcf70655a</string>-->
+    <string name="applovin_ad_unit_id_type_banner">6eba7d9cff821ad6</string>
+    <string name="applovin_sdk_key">zzWuLBq8NTCIhWHKmcTLXfazN9_JXAK3NGAZmkIEQn54cOESfbGVFGhqbKuE2DaT9vyZHzu7f0sQOKC5O9HDdn</string>
+</resources>

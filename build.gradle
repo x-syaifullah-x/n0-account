@@ -1,0 +1,55 @@
+buildscript {
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.5.0"
+    }
+
+    subprojects {
+        project.configurations.all {
+            resolutionStrategy.eachDependency { details ->
+                if (details.requested.group == "androidx.arch.core") {
+                    details.useVersion "2.2.0"
+                }
+                if (details.requested.group == "androidx.core") {
+                    details.useVersion "1.10.0"
+                }
+                if (details.requested.group == "androidx.fragment") {
+                    details.useVersion "1.5.5"
+                }
+                if (details.requested.group == "androidx.lifecycle") {
+                    details.useVersion "2.6.1"
+                }
+                if (details.requested.group == "org.jetbrains.kotlin") {
+                    if ("${details.requested}".contains("org.jetbrains.kotlin:kotlin-stdlib")) {
+                        details.useVersion "1.9.20"
+                    }
+                }
+            }
+        }
+    }
+}
+
+allprojects {
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+//    String userName = System.getProperty("user.name")
+//    if (userName == "xxx") {
+//        String userHomePath = System.getProperty("user.home")
+//        buildDir = "${userHomePath}/.cache/android/studio/project/${rootProject.name}/${project.name}/build"
+//    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
