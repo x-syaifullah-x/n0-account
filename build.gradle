@@ -7,11 +7,11 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.5.0"
+        classpath "com.android.tools.build:gradle:8.6.0"
     }
 
     subprojects {
-        project.configurations.all {
+        project.configurations.configureEach {
             resolutionStrategy.eachDependency { details ->
                 if (details.requested.group == "androidx.arch.core") {
                     details.useVersion "2.2.0"
@@ -42,14 +42,8 @@ allprojects {
         google()
         mavenCentral()
     }
-
-//    String userName = System.getProperty("user.name")
-//    if (userName == "xxx") {
-//        String userHomePath = System.getProperty("user.home")
-//        buildDir = "${userHomePath}/.cache/android/studio/project/${rootProject.name}/${project.name}/build"
-//    }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
 }

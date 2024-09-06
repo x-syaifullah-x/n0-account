@@ -1,2 +1,3 @@
-rootProject.name = "Payment Checker"
-include ':app'
+rootProject.name = "N0 Account"
+
+include ":app"
