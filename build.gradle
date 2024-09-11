@@ -44,6 +44,6 @@ allprojects {
     }
 }
 
-tasks.register('clean', Delete) {
+tasks.register("clean", Delete) {
     delete rootProject.layout.buildDirectory
 }

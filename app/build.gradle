@@ -7,10 +7,10 @@ android {
     namespace packageName
 
     compileSdk 35
-    buildToolsVersion "35.0.0"
+    buildToolsVersion = "35.0.0"
 
     defaultConfig {
-        applicationId packageName
+//        applicationId packageName
         minSdk 23
         targetSdk 35
         versionCode 1
@@ -50,6 +50,11 @@ android {
             jniDebuggable false
             signingConfig signingConfigs.release
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
