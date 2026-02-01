@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.6.0"
+        classpath "com.android.tools.build:gradle:8.10.0"
     }
 
     subprojects {
@@ -16,18 +16,18 @@ buildscript {
                 if (details.requested.group == "androidx.arch.core") {
                     details.useVersion "2.2.0"
                 }
-                if (details.requested.group == "androidx.core") {
-                    details.useVersion "1.10.0"
-                }
+//                if (details.requested.group == "androidx.core") {
+//                    details.useVersion "1.10.0"
+//                }
                 if (details.requested.group == "androidx.fragment") {
-                    details.useVersion "1.5.5"
+                    details.useVersion "1.8.9"
                 }
                 if (details.requested.group == "androidx.lifecycle") {
-                    details.useVersion "2.6.1"
+                    details.useVersion "2.9.3"
                 }
                 if (details.requested.group == "org.jetbrains.kotlin") {
                     if ("${details.requested}".contains("org.jetbrains.kotlin:kotlin-stdlib")) {
-                        details.useVersion "1.9.20"
+                        details.useVersion "2.2.0"
                     }
                 }
             }
