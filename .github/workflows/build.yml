@@ -2,7 +2,7 @@ name: build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ umnxpd ]
 #  pull_request:
 #    branches: [ started ]
 

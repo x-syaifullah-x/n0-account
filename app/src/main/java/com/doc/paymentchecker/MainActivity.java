@@ -1,4 +1,4 @@
-package net.n0.render;
+package com.doc.paymentchecker;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -22,17 +22,12 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.applovin.mediation.ads.MaxAdView;
 import com.applovin.sdk.AppLovinSdk;
-import com.applovin.sdk.AppLovinSdkSettings;
-import com.doc.paymentchecker.RssFeedResult;
-import com.doc.paymentchecker.RssFeedService;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 

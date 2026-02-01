@@ -20,7 +20,7 @@
         android:theme="@style/Theme.PaymentChecker"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity"
+            android:name="com.doc.paymentchecker.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="landscape">

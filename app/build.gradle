@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    def packageName = "net.n0.render"
+    def packageName = "com.doc.paymentchecker"
     namespace packageName
 
     compileSdk 36
@@ -12,8 +12,8 @@ android {
     defaultConfig {
 //        applicationId packageName
         minSdk 23
-        targetSdk 35
-        versionCode 1
+//        targetSdk 36
+        versionCode 4
         versionName "4.0.0"
     }
 
