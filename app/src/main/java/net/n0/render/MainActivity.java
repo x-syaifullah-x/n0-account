@@ -128,7 +128,8 @@ public class MainActivity extends FragmentActivity {
         RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
         Uri uri = new Uri.Builder()
                 .scheme("http")
-                .authority("line.my-tv.cc")
+                // .authority("line.my-tv.cc")
+                .authority("line.globalnsb.tech")
                 .path("player_api.php")
                 .appendQueryParameter("username", user.trim())
                 .appendQueryParameter("password", pass.trim())
