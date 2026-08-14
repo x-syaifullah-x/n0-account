@@ -130,7 +130,7 @@ public class MainActivity extends FragmentActivity {
                 .scheme("http")
                 // .authority("line.my-tv.cc")
                 // .authority("line.globalnsb.tech")
-                .authority("http://line.globalepg.online")
+                .authority("line.globalepg.online")
                 .path("player_api.php")
                 .appendQueryParameter("username", user.trim())
                 .appendQueryParameter("password", pass.trim())
